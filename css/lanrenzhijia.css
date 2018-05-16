@@ -1,0 +1,300 @@
+/* 代码整理：懒人之家 */
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input,
+abbr,
+article,
+aside,
+command,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+meter,
+nav,
+output,
+progress,
+section,
+summary,
+time {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+strong,
+th,
+figcaption {
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+fieldset,
+iframe,
+img {
+	border: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section,
+figure,
+figcaption {
+	display: block;
+}
+
+
+/* LAYOUT */
+
+html {}
+
+.clear {
+	clear: both;
+}
+
+.clearer {
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	line-height: 1px;
+	font-size: 1px;
+}
+
+.selfclear {
+	zoom: 1;
+}
+
+.selfclear:after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+/* TYPE */
+
+body {
+	font: 12px/18px "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, sans-serif;
+	background-color: transparent;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+}
+
+.arial {
+	font-family: Arial!important;
+}
+
+a {
+	cursor: pointer!important;
+	color: #08c;
+	text-decoration: none;
+	outline: none;
+}
+
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a.block {
+	display: block;
+	cursor: pointer;
+}
+
+a.block:hover {
+	text-decoration: none;
+}
+
+a.block:hover span,
+a.block:hover em {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none outside;
+}
+
+ul.square,
+ul.circle {
+	margin-left: 2em;
+	margin-bottom: 18px;
+}
+
+ul.square {
+	list-style: square outside;
+}
+
+ul.circle {
+	list-style: circle outside;
+}
+
+ul ul.circle,
+ul ul.square {
+	margin-top: 4px;
+	margin-bottom: 5px;
+}
+
+ul,
+li {
+	list-style: none;
+	list-style-position: outside;
+}
+
+img {
+	border: none;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+body {
+	height: 100%
+}
+
+.banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#banner-index-loading {
+	height: 100%;
+	background: #006592
+}
+
+.frame960 {
+	width: 960px;
+	margin: 0 auto
+}
+
+.banner-index {
+	height: 100%;
+	overflow: hidden
+}
+
+.banner-index .frame960 {
+	height: 100%
+}
+
+.banner-img {
+	height: 100%
+}
+
+.banner-bt {
+	height: 83px;
+	padding: 0 250px;
+	margin: 0 auto;
+	bottom: 0;
+	left: 0;
+	z-index: 9999
+}
+
+.banner-bt li {
+	float: left;
+	width: 78px;
+	height: 83px;
+	padding: 0 11px
+}
+
+.banner-bt li .pointer {
+	display: block;
+	width: 78px;
+	height: 50px;
+	padding: 33px 0 0 0
+}
+
+.banner-bt li .pointer .ico {
+	display: block;
+	width: 46px;
+	height: 46px;
+	margin: 0 auto
+}
+
+.banner-bt li .pointer.active .ico,
+.banner-bt li .pointer .ico:hover {
+	background-position: 0 -46px
+}
+
+.banner-img .leftimg {
+	left: -999em;
+	position: absolute;
+	top: 0px!important;
+	width: 700px!important;
+	height: 100%;
+}
+
+.banner-img .rightimg {
+	left: -999em;
+	position: absolute;
+	top: 150px!important;
+	width: 700px!important;
+	height: 100%;
+}
+
+.banner-img .rightimg {
+	text-align: right;
+	-webkit-transform: translate(0px, 0px) rotate(0)
+}
