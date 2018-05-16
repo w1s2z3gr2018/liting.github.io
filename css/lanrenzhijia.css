@@ -1,5 +1,5 @@
 /* 代码整理：懒人之家 */
-
+/*
 html,
 body,
 div,
@@ -90,14 +90,14 @@ section,
 figure,
 figcaption {
 	display: block;
-}
+}*/
 
 
 /* LAYOUT */
 
 html {}
 
-.clear {
+/*.clear {
 	clear: both;
 }
 
@@ -109,9 +109,9 @@ html {}
 	height: 0;
 	line-height: 1px;
 	font-size: 1px;
-}
+}*/
 
-.selfclear {
+/*.selfclear {
 	zoom: 1;
 }
 
@@ -121,18 +121,18 @@ html {}
 	height: 0;
 	clear: both;
 	visibility: hidden;
-}
+}*/
 
 
 /* TYPE */
-
+/*
 body {
 	font: 12px/18px "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, sans-serif;
 	background-color: transparent;
 	color: #333;
 	-webkit-font-smoothing: antialiased;
-}
-
+}*/
+/*
 .arial {
 	font-family: Arial!important;
 }
@@ -190,7 +190,7 @@ ul ul.circle,
 ul ul.square {
 	margin-top: 4px;
 	margin-bottom: 5px;
-}
+}*/
 
 ul,
 li {
@@ -210,13 +210,13 @@ img {
 	position: relative;
 }
 
-body {
+/*body {
 	height: 100%
-}
+}*/
 
 .banner {
 	position: absolute;
-	width: 100%;
+	width: 99.85%;
 	height: 100%;
 }
 
@@ -245,9 +245,9 @@ body {
 
 .banner-bt {
 	height: 83px;
-	padding: 0 250px;
+	padding: 0 200px;
 	margin: 0 auto;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 	z-index: 9999
 }

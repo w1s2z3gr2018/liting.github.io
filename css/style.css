@@ -149,7 +149,6 @@ header {
 	
 }
 .tagline {
-
 	font-size:2.3em;
 	letter-spacing:0.02em;
 	padding:0;
@@ -158,6 +157,7 @@ header {
 .panel {
 	height:100vh;
 	border-bottom:1px solid #666;
+	margin-bottom: 0px!important;
 }
 .home {
 	background: #65c2cf!important;
