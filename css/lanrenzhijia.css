@@ -247,7 +247,7 @@ img {
 	height: 83px;
 	padding: 0 200px;
 	margin: 0 auto;
-	bottom: 10px;
+	bottom: 20px;
 	left: 0;
 	z-index: 9999
 }
@@ -281,7 +281,7 @@ img {
 .banner-img .leftimg {
 	left: -999em;
 	position: absolute;
-	top: 0px!important;
+	top: 50px!important;
 	width: 700px!important;
 	height: 100%;
 }
@@ -289,7 +289,7 @@ img {
 .banner-img .rightimg {
 	left: -999em;
 	position: absolute;
-	top: 150px!important;
+	top: 280px!important;
 	width: 700px!important;
 	height: 100%;
 }
