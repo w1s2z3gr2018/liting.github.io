@@ -3,18 +3,25 @@
 
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="https://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
 		<title>网站大全</title>
 	</head>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../css/website.css" />
-	<script type="text/javascript" src="../js/jquery.min.js" ></script>
+
 	<body>
 		<div class="container bread">
 			<ul>
-				<li><a href="../index.html">首页</a></li>
+				<li>
+					<a href="../index.html">首页</a>
+				</li>
 				<li>|</li>
 				<li>网站大全</li>
 			</ul>
+			<div class="loginAdmin">
+				欢迎您,<span></span>
+			</div>
 		</div>
 		<div class="http">
 			<h1 align="center">实用网站</h1>
@@ -32,7 +39,7 @@
 					<div class="panel-body">
 						<ul class="list-group">
 							<li class="list-group-item">
-								<a href="https://github.com/getlantern/lantern/releases/tag/latest" data-toggle="tooltip" >蓝灯翻墙工具</a>
+								<a href="https://github.com/getlantern/lantern/releases/tag/latest" data-toggle="tooltip">蓝灯翻墙工具</a>
 							</li>
 							<li class="list-group-item">
 								<a href="http://git.jishutao.com/jishutao/portal.git" data-toggle="tooltip" title="账号:liting2017 密码:a56388" target="_blank">git仓库地址pro项目</a>
@@ -366,7 +373,7 @@
 		<div id="id01" class="modal">
 			<form class="modal-content animate">
 				<div class="imgcontainer">
-					<img src="https://static.runoob.com/images/mix/img_avatar.png" alt="Avatar" class="avatar">
+					<img src="https://static.runoob.com/images/mix/img_avatar.png" alt="Avatar" class="avatar"><span>欢迎来到网站学习模块.</span>
 				</div>
 				<div class="containerForm">
 					<label><b>Username</b></label><br />
@@ -384,80 +391,6 @@
 			<img src="../images/shuye_zuo.png" alt="树叶右" class="syLeft" />
 		</div>
 	</body>
-	<script type="text/javascript">
-		$(function() {
-			$("[data-toggle='tooltip']").tooltip();
-		});
-		/*
-		 * 登录框操作
-		 */
-				var login = document.querySelector('.modal');
-		
-				window.onload = function() {
-					login.style.display = "block";
-				};
-				/*
-		
-				 * 提示消息
-				 */
-				function showTxt(data) {
-					var x = document.getElementById("showTxt");
-					x.innerHTML = data;
-					x.className = "show";
-					setTimeout(function() {
-						x.className = x.className.replace("show", "");
-					}, 3000);
-				};
-				// 获取模型
-				var modal = document.getElementById('id01');
-				// 鼠标点击模型外区域关闭登录框
-				window.onclick = function(event) {
-					if(event.target == modal) {
-						var txt = "登录后才可进入首页";
-						showTxt(txt);
-					};
-				}
-				/*
-				 * 登录操作
-				 */
-				var subBtn = document.querySelector(".subBtn");
-				subBtn.onclick = function(e) {
-					e.preventDefault();
-					var user = document.querySelector("#user").value;
-					var passW = document.querySelector("#passW").value;
-					if(user == 'admin' && passW == '123456') {
-						login.classList.add('loginHide');
-						let welTxt = "欢迎 [\n" + user + "\n] 进入首页!"
-						document.querySelector(".http").style.height="100%";
-						showTxt(welTxt);
-					} else {
-						showTxt("请输入正确的用户名/密码!");
-					};
-				};
-		var returnTop = document.querySelector('.returnTop');
-		window.onscroll = function() {
-			let y = window.scrollY;
-			if(y > 200) {
-				setTimeout(function() {
-					returnTop.classList.add("moveTop");
-				}, 100);
-			} else {
-				setTimeout(function() {
-					returnTop.classList.remove("moveTop");
-				}, 100);
-			}
-		};
-		returnTop.onclick = function() {
-			let scrollTop = window.scrollY;
-			let time = function() {
-				scrollTop -= 20;
-				if(scrollTop <= 0) {
-					clearInterval(times);
-				}
-				window.scrollTo(0, scrollTop);
-			}
-			let times = setInterval(time, 0.01);
-		}
-	</script>
-
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script src="../js/website.js"></script>
 </html>

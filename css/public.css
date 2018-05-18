@@ -26,7 +26,7 @@ html { background-color: #CCC; }
 	z-index: 999999;
     margin: 0px auto;
     width: 100%;
-    transition: all .3s ease-in;
+    transition: all .2s ease-in-out;
 }
 .menu, .menu ul {
     list-style: none;
@@ -233,5 +233,5 @@ html { background-color: #CCC; }
 }
 .indexNav.navShow{
 	top: 0px;
-	transition: all .3s ease-in;
+	transition: all .2s ease-in-out;
 }
