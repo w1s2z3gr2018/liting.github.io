@@ -53,10 +53,10 @@ html { background-color: #CCC; }
 }
 .menu a {
     border-left: 2px solid rgba(0, 0, 0, 0);
-    color: #808080;
+    color: #666;
     display: block;
     font-family: 'Lucida Console';
-    font-size: 18px;
+    font-size: 14px;
     line-height: 54px;
     padding: 0 25px;
     text-decoration: none;
@@ -71,9 +71,11 @@ html { background-color: #CCC; }
 .menu li:hover > a {
     border-radius: 5px 0 0 0;
     border-left: 3px solid #46B8DA;
-    color: #666;
+    color: #fff;
 }
-
+.menu li.active:hover > a{
+	color: #fff;
+}
 .submenu {
     left: 0;
     max-height: 0;
@@ -110,7 +112,7 @@ html { background-color: #CCC; }
 }
 .menu > li:hover .submenu li, .menu > li:focus .submenu li {
     opacity: 1;
-
+	color:#fff;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -230,6 +232,9 @@ html { background-color: #CCC; }
     -ms-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s;
+}
+.menu li.active > a{
+	color: #1E90FF;
 }
 .indexNav.navShow{
 	top: 0px;

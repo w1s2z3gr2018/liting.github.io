@@ -21,8 +21,33 @@ runPage = new FullPage({
 		if(index){
 			$('.indexNav').removeClass('navShow');
 		} else{
-			$('.indexNav').addClass('navShow')
+			$('.indexNav').addClass('navShow');
+		};
+		if(index==1){
+			$('.pageT-warpper').addClass('pageShow');
+			$('.pageImg').addClass('pageShow');
+			setTimeout(function(){
+				$('.pageT-warpper li')[0].className='show';
+			},400)
+			setTimeout(function(){
+				$('.pageT-warpper li.show .imgs').addClass('actImg');
+				$('.pageT-warpper li.show .texts').addClass('actTxt');
+			},900)
+		}else{
+			$('.pageT-warpper').removeClass('pageShow');
+			$('.pageImg').removeClass('pageShow');
+			$('.pageT-warpper li.show .imgs').removeClass('actImg');
+			$('.pageT-warpper li.show .texts').removeClass('actTxt');
+			for (var i = 0; i < $('.pageT-warpper li').length; i++) {
+				$('.pageT-warpper li')[i].className='';
+			}
+		};
+		if(index==2){
+			$('.pageS').addClass('show');
+		}else{
+			$('.pageS').removeClass('show');
 		}
 		console.log('滚动到了第 ' + (index + 1) + ' 屏');
+		
 	}
 });
