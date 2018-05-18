@@ -93,6 +93,7 @@ ul.pageImg-nav li a:hover {
 .pageT-warpper ol li{
 	opacity: 0;
 	transform: scale(0);
+	transform: rotate(360deg);
 	position: absolute;
 	transform: rotate(0deg);
 	width: 100%;
@@ -107,8 +108,9 @@ ul.pageImg-nav li a:hover {
 }
 .pageT-warpper ol li.showPage{
 	transform: scale(1);
+	transform: rotate(360deg);
 	opacity: 1;
-	transition: all .5s ease-in;
+	transition: all .1s ease-in-out;
 }
 .pageT-warpper ol li.showPage .imgs.actImg{
 	transform: scale(1);
@@ -167,10 +169,14 @@ ul.pageImg-nav li a:hover {
 	color: #FFFFFF;
 	transition: all .5s ease-in;
 }
-.pageT-warpper ol li.show>div .texts.actTxt,.pageT-warpper ol li.showPage>div .texts.actTxt{
+.pageT-warpper ol li.show>div .texts.actTxt{
 	transform: scale(1);
 	transform-origin: top;
 	transition: all .5s ease-in;
+}
+.pageT-warpper ol li.showPage>div .texts.actTxt{
+	transform: rotate(360deg);
+	transition: all .3s ease-in;
 }
 .pageT-warpper ol li>div .texts h6{
 	text-align: center;

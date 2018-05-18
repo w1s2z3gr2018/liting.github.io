@@ -51,7 +51,5 @@ runPage = new FullPage({
 		}else{
 			$('.pageS').removeClass('show');
 		}
-		console.log('滚动到了第 ' + (index + 1) + ' 屏');
-		
 	}
 });
