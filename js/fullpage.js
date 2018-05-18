@@ -26,6 +26,7 @@ runPage = new FullPage({
 		if(index==1){
 			$('.pageT-warpper').addClass('pageShow');
 			$('.pageImg').addClass('pageShow');
+			$('.pageImg-nav li')[0].className='show'
 			setTimeout(function(){
 				$('.pageT-warpper li')[0].className='show';
 			},400)
@@ -34,6 +35,9 @@ runPage = new FullPage({
 				$('.pageT-warpper li.show .texts').addClass('actTxt');
 			},900)
 		}else{
+			for (var i = 0; i < $('.pageImg-nav li').length; i++) {
+				$('.pageImg-nav li')[i].className='';
+			}
 			$('.pageT-warpper').removeClass('pageShow');
 			$('.pageImg').removeClass('pageShow');
 			$('.pageT-warpper li.show .imgs').removeClass('actImg');

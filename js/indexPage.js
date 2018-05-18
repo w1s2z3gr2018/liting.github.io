@@ -26,8 +26,8 @@ $(function(){
 		for (var i = 0; i < $('.pageT-warpper ol li').length; i++) {
 			$('.pageT-warpper ol li')[i].className='';
 		}
-		$('.pageT-warpper ol li')[index].className='show';
-		$('.pageT-warpper li.show .imgs').addClass('actImg');
-		$('.pageT-warpper li.show .texts').addClass('actTxt');
+		$('.pageT-warpper ol li')[index].className='showPage';
+		$('.pageT-warpper li.showPage .imgs').addClass('actImg');
+		$('.pageT-warpper li.showPage .texts').addClass('actTxt');
 	};
 });

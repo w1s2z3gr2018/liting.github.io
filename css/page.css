@@ -82,6 +82,7 @@ ul.pageImg-nav li a:hover {
 	height: 60vh;
 	margin-right:40px;
 	transition: all .3s ease-in;
+	overflow: hidden;
 }
 .pageShow.pageImg{
 	transform: scale(1);
@@ -102,6 +103,15 @@ ul.pageImg-nav li a:hover {
 	transform: scale(1);
 	transform: rotate(360deg);
 	opacity: 1;
+	transition: all .5s ease-in;
+}
+.pageT-warpper ol li.showPage{
+	transform: scale(1);
+	opacity: 1;
+	transition: all .5s ease-in;
+}
+.pageT-warpper ol li.showPage .imgs.actImg{
+	transform: scale(1);
 	transition: all .5s ease-in;
 }
 .pageT-warpper ol li.show .imgs.actImg{
@@ -137,27 +147,29 @@ ul.pageImg-nav li a:hover {
 	transition: all .5s ease-in;
 }
 .pageT-warpper ol li.show>div .texts{
-	padding: 10px;
-	float: left;
-	transform: scale(1);
 	width: 55%;
-	color: #FFFFFF;
+	opacity: 1;
 	transition: all .5s ease-in;
+}
+.pageT-warpper ol li.showPage>div .texts{
+	width: 55%;
+	opacity: 1;
+	transform-origin: top;
+	transform: scale(1);
 }
 .pageT-warpper ol li>div .texts{
 	transform: scale(0);
+	transform-origin: top;
+	opacity: 0;
 	padding: 10px;
-	float: left;
+	float: right;
 	width: 0%;
 	color: #FFFFFF;
 	transition: all .5s ease-in;
 }
-.pageT-warpper ol li.show>div .texts{
-	transform: scale(0);
-	transition: all .5s ease-in;
-}
-.pageT-warpper ol li.show>div .texts.actTxt{
+.pageT-warpper ol li.show>div .texts.actTxt,.pageT-warpper ol li.showPage>div .texts.actTxt{
 	transform: scale(1);
+	transform-origin: top;
 	transition: all .5s ease-in;
 }
 .pageT-warpper ol li>div .texts h6{
