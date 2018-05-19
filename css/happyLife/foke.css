@@ -1,0 +1,55 @@
+/*
+ * @decription:笑一笑,十年少。
+ * @update:abbr018/05/18 20:30:00 
+ * @author:liting
+ * 
+ */
+
+.wrapperr {
+	overflow: hidden;
+	background: #ffffff;
+	padding-top: 20px;
+}
+
+.breadcrumb {
+	background-color: #ffffff;
+}
+
+.fokeMain {
+	color: #666;
+}
+
+.fokeMain h4 {
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+}
+
+.fokeMain time {
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 15px;
+}
+
+.fokeMain p {
+	text-align: justify;
+}
+
+#biuuu_city {
+	float: right;
+	padding: 20px;
+}
+
+.total {
+	float: right;
+	padding: 24px 0px;
+}
+
+#main { position: relative; margin: auto;  }
+.item { position: absolute; padding: 10px; }
+.pic { padding: 10px; border: 1px solid #ccc;border-radius: 10px;}
+.pic p{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #999;
+}

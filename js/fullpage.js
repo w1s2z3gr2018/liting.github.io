@@ -4,7 +4,6 @@ $('body,html').mousemove(function(e) {
 		$('.indexNav').addClass('navShow');
 	}
 })
-
 var runPage;
 runPage = new FullPage({
 	id: 'pageContain',
