@@ -75,7 +75,8 @@ body {
 }
 
 .page3 {
-	background: #992211;
+	background: url(../images/index/index-pagebj.gif) no-repeat;
+	background-size: 100% 100%;
 }
 
 .page4 {
