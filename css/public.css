@@ -259,4 +259,4 @@ footer{
 	line-height: 40px;
 	text-align: center;
 }
-.indexNav time{float: right;margin-right: 15px;font-size: 14px;}
+.indexNav .time{float: right;margin-right: 15px;font-size: 14px;}
