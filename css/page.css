@@ -15,7 +15,7 @@ p{
 .pageImg {
 	position: relative;
 	float: left;
-	width: 20vw;
+	width: 380px;
 	height: auto;
 	margin-top: 0;
 	margin-left: -100px;
@@ -37,7 +37,9 @@ ul.pageImg-nav {
 ul.pageImg-nav li {
 	margin: 5px 0 0 0;
 }
-
+.contain  .pageShow{
+	float: left;
+}
 ul.pageImg-nav li a {
 	-webkit-transition: all 0.3s ease-out;
 	background: #cbcbcb url(../images/border.png) no-repeat;
@@ -69,8 +71,7 @@ ul.pageImg-nav li a:hover {
 	position: relative;
 	float: right;
 	margin-right: -140px;
-	width: 0vw;
-	height: 0vh;
+	width: 780px;
 	margin-top: 20vh;
 	border-radius:10px ;
 	box-shadow:10px 10px 20px #666;
@@ -78,7 +79,7 @@ ul.pageImg-nav li a:hover {
 	background: rgba(0,0,0,.3);
 }
 .pageShow.pageT-warpper{
-	width: 60vw;
+	width: 800px;
 	height: 60vh;
 	margin-right:40px;
 	transition: all .3s ease-in;
@@ -87,7 +88,8 @@ ul.pageImg-nav li a:hover {
 .pageShow.pageImg{
 	transform: scale(1);
 	margin-left:0px;
-	margin-top:13vh ;
+	width: 300px;
+	margin-top:20vh ;
 	transition: all .3s ease-in;
 }
 .pageT-warpper ol li{
@@ -136,16 +138,20 @@ ul.pageImg-nav li a:hover {
 	width: 100%;
 	border-radius: 50%;
 	box-shadow: 0 0 10px #000;
-	height:25vw;
+	height:100%;
 }
 .pageT-warpper ol li>div .imgs{
 	transform: scale(.3);
-	width: 45%;
+	width: 330px;
+	height: 330px;
+	vertical-align: top;
+	margin-top: 5vh;
 	float: left;
 	padding: 5px;
 	border-radius: 50%;
 	border:1px solid #ccc ;
 	overflow: hidden;
+
 	transition: all .5s ease-in;
 }
 .pageT-warpper ol li.show>div .texts{
