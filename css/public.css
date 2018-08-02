@@ -1,5 +1,6 @@
 body{
-	
+    background: url(../images/page2bj.jpg) no-repeat;
+    background-size:100% 100%; 
 }
 * {
     margin: 0;
