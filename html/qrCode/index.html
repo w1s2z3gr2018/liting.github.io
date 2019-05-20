@@ -49,12 +49,31 @@
             width :160,
             height : 160
         });
-        var hash = window.location.href,str='';
+        var hash = window.location.href,str='',obj={};
         if(hash){
-            var hashArr = hash.split('qrCode=');
-            str = hashArr[1]
+            var hashArr = hash.split('?');
+            str = hashArr[1];
+            changeUrl(str)
         }
-        qrcodeImg.makeCode(str);
+        function changeUrl(res){
+            var urlArr=[],urlobj=[];
+            if(!res) return;
+            if(~res.indexOf('&')){
+                urlArr = res.split('&');
+                urlArr.map(item=>{
+                    urlobj = item.split('=');
+                    obj[urlobj[0]]=urlobj[1]+'';
+                })
+               
+            }else{
+                urlobj=res.split('=')
+                obj[urlobj[0]]=urlobj[1]+'';
+            }
+           
+            return obj
+        }
+        if(!obj.qrCode) return;
+        qrcodeImg.makeCode(obj.qrCode);
     }
 </script>
 </html>
