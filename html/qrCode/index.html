@@ -9,16 +9,34 @@
        *{
            padding: 0;
            margin: 0;
-       }
+        }
+       body,html{
+           width: 100%;
+           height: 100%;
+            background-image: linear-gradient(to bottom , #7A88FF 50%, #7AFFAF);
+            background-size: 100% 100%;
+        }
        .txt{
            margin: 20px 0;
            text-align: center;
            width: 100%;
        }
+       .content{
+           box-sizing: border-box;
+           width: 200px;
+           height: 200px;
+           margin: 0 auto;
+           padding: 20px;
+           background: #fff;
+           margin-top: 35%;
+           box-shadow:  0 0 20px #333;
+       }
    </style>
 </head>
 <body>
-    <div id="qrcode"></div>
+    <div class="content">
+        <div id="qrcode"></div>
+    </div>
     <p class="txt">请扫描二维码</p>
 </body>
 <script src="../../js/qrCode/jquery.min.js"></script>
@@ -28,8 +46,8 @@
         var winW =document.documentElement.clientWidth;
         var qrcode = document.getElementById('qrcode');
         var qrcodeImg = new QRCode(document.getElementById("qrcode"), {
-            width : winW*0.8,
-            height : winW*0.8
+            width :160,
+            height : 160
         });
         var hash = window.location.href,str='';
         if(hash){
@@ -37,8 +55,6 @@
             str = hashArr[1]
         }
         qrcodeImg.makeCode(str);
-        qrcode.style.marginLeft='10%';
-        qrcode.style.marginTop='10%';
     }
 </script>
 </html>
