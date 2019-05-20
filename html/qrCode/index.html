@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二维码</title>
+   <style>
+       *{
+           padding: 0;
+           margin: 0;
+       }
+       .txt{
+           margin: 20px 0;
+           text-align: center;
+           width: 100%;
+       }
+   </style>
+</head>
+<body>
+    <div id="qrcode"></div>
+    <p class="txt">请扫描二维码</p>
+</body>
+<script src="../../js/qrCode/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/qrCode/qrcode.min.js"></script>
+<script>
+    window.onload=function(){
+        var winW =document.documentElement.clientWidth;
+        var qrcode = document.getElementById('qrcode');
+        var qrcodeImg = new QRCode(document.getElementById("qrcode"), {
+            width : winW*0.8,
+            height : winW*0.8
+        });
+        var hash = window.location.href,str='';
+        if(hash){
+            var hashArr = hash.split('qrCode=');
+            str = hashArr[1]
+        }
+        qrcodeImg.makeCode(str);
+        qrcode.style.marginLeft='10%';
+        qrcode.style.marginTop='10%';
+    }
+</script>
+</html>
